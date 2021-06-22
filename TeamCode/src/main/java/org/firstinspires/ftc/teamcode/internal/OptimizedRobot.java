@@ -19,7 +19,6 @@ import com.qualcomm.robotcore.hardware.configuration.annotations.MotorType;
 import com.qualcomm.hardware.rev.RevBlinkinLedDriver;
 
 import org.firstinspires.ftc.teamcode.internal.roadrunner.drive.SampleMecanumDrive;
-import org.firstinspires.ftc.teamcode.main.pipelines.OLDWABOTPipeline;
 import org.firstinspires.ftc.teamcode.util.Encoder;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
@@ -338,10 +337,7 @@ public class OptimizedRobot {
      */
     @Experimental
     public void synchronousDelayGateCLOSE(String delayName) {
-        if(delayInfoBools.get(delayName) == null)
-            delayInfoBools.put(delayName, false);
-        else
-            delayInfoBools.put(delayName, false);
+        delayInfoBools.put(delayName, false);
     }
 
     /**

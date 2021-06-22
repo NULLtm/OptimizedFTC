@@ -164,7 +164,7 @@ public class OptimizedController {
     }
 
     /**
-     * Will automatically search to see if a gamepad has corrected pressed the buttons to activate this virtual controller
+     * Will automatically search to see if a gamepad has correctly pressed the buttons to activate this virtual controller
      */
     protected void updateInternalGamepad() {
         if(gamepad1.start && getBool(startKey, gamepad1) && (requiredGamepad.equals(gamepad1) || requiredGamepad == null)) {
@@ -173,6 +173,7 @@ public class OptimizedController {
             internalGamepad = gamepad2;
         }
     }
+
 
     /**
      * Returns whether this key is traditionally a key that returns a number value associated with it

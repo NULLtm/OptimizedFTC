@@ -5,7 +5,6 @@ public class NumberFunctions {
 
     private static final double DOUBLE_TOLERANCE = 0.001;
 
-
     /**
      * Approximates a float around zero using a tolerance level
      */

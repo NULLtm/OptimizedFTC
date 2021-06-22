@@ -43,7 +43,7 @@ public class ExampleAutonomous extends LinearOpMode {
 
 
         // Logging to console on the phone
-        robot.log("Message:", "Hello Drivers!");
+        robot.autonomousLog("Message:", "Hello Drivers!");
 
 
 

@@ -18,7 +18,7 @@ public abstract class OptimizedOpenCVPipeline extends OpenCvPipeline {
      * Internal method to get this output
      * @return The output token
      */
-    public String getVisionOutput() {
+    public final String getVisionOutput() {
         return outputToken;
     }
 
