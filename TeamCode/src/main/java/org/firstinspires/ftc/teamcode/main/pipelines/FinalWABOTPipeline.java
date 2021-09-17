@@ -12,10 +12,13 @@ public class FinalWABOTPipeline extends OptimizedOpenCVPipeline {
     @Override
     public Mat processFrame(Mat input) {
 
+        // Singleton Instance
         builder = OpenCVBuilder.getInstance(input);
 
+        // Change our color space
         builder.changeColorSpace(Imgproc.COLOR_RGB2HSV);
 
+        // Create two submats -- sample regions for vision detection
         builder.createSubmat("Top", 0.3, 0.7, -0.3, 0.55);
         builder.createSubmat("Bottom", 0.3, 0.7, 0.5, -0.15);
 

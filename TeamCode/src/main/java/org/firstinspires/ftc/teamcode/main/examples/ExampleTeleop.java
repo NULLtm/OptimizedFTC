@@ -43,7 +43,7 @@ public class ExampleTeleop extends OpMode {
         // Set up our motor from before using an alias -- note this is a DcMotorEx used for setVelocity control
         exampleMotor = robot.getMotorExByAlias("myAlias", DcMotor.RunMode.RUN_WITHOUT_ENCODER, DcMotorSimple.Direction.FORWARD);
 
-        robot.teleopLog("Status Update", "Done with Initialization!");
+        robot.addLog("Status Update", "Done with Initialization!");
         robot.pushLog();
     }
 

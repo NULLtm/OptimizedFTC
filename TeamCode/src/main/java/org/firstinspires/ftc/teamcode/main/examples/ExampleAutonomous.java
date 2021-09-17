@@ -43,13 +43,16 @@ public class ExampleAutonomous extends LinearOpMode {
 
 
         // Logging to console on the phone
-        robot.log("Message:", "Hello Drivers!");
+        robot.addLog("Message:", "Hello Drivers!");
+        robot.pushLog();
 
 
 
 
         robot.getDriveFunctions().strafeLinear(OptimizedDriveFunctions.Direction.LEFT, 0.75);
+
         sleep(2000);
+
         robot.getDriveFunctions().stopMotors();
     }
 }

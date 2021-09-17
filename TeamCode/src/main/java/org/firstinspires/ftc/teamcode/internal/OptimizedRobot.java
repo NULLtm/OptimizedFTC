@@ -19,7 +19,6 @@ import com.qualcomm.robotcore.hardware.configuration.annotations.MotorType;
 import com.qualcomm.hardware.rev.RevBlinkinLedDriver;
 
 import org.firstinspires.ftc.teamcode.internal.roadrunner.drive.SampleMecanumDrive;
-import org.firstinspires.ftc.teamcode.main.pipelines.OLDWABOTPipeline;
 import org.firstinspires.ftc.teamcode.util.Encoder;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
@@ -398,17 +397,7 @@ public class OptimizedRobot {
      * @param title The title of the log
      * @param value The value of data you want to log
      */
-    public void autonomousLog(String title, Object value){
-        telemetry.addData("WABOT: "+title, value);
-        telemetry.update();
-    }
-
-    /**
-     * Print a log to the phone during a teleop opmode. Does NOT require the use of {@link #pushLog()}
-     * @param title The title of the log
-     * @param value The value of data you want to log
-     */
-    public void teleopLog(String title, Object value){
+    public void addLog(String title, Object value){
         telemetry.addData("WABOT: "+title, value);
     }
 
