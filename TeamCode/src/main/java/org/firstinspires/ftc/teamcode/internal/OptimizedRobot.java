@@ -337,10 +337,7 @@ public class OptimizedRobot {
      */
     @Experimental
     public void synchronousDelayGateCLOSE(String delayName) {
-        if(delayInfoBools.get(delayName) == null)
-            delayInfoBools.put(delayName, false);
-        else
-            delayInfoBools.put(delayName, false);
+        delayInfoBools.put(delayName, false);
     }
 
     /**
