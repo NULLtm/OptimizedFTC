@@ -1,4 +1,5 @@
-##Hello Good Programmers!##
+## Hello Good Programmers!
+
 This is the OptimizedFTC Quickstart Project!
 
 A project built by @OwenBoseley over the course a few years. It combines the traditional FIRST SDK for FTC with
